@@ -14,9 +14,8 @@ class Bucketlist(models.Model):
 
 class Bucketlist2(models.Model):
     """This class represents the bucketlist model."""
-    name = models.CharField(max_length=255, blank=False, unique=True)
-    date_created = models.DateTimeField(auto_now_add=True)
-    date_modified = models.DateTimeField(auto_now=True)
+    titulo = models.CharField(max_length=255, blank=False, unique=True)
+
 
     def __str__(self):
         """Return a human readable representation of the model instance."""
